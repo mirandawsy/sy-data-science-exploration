@@ -1,4 +1,4 @@
-sy-data-science-exploration
+data-science-exploration
 ==============================
 
 Repo for exploring and learning ML methodologies and algorithms
