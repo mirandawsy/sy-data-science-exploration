@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "sy-data-science-exploration"
-version = "1.0.0"
+version = "0.1.0"
 description = "Repo for exploring and learning ML methodologies and algorithms"
 authors = ["Echo_www <wuxx1308@umn.edu>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "sy_data_science_exploration"}]
+packages = [{include = "sy_data_science_exploration", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
