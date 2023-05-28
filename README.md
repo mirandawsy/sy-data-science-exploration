@@ -6,7 +6,12 @@ Repo for exploring and learning ML methodologies and algorithms
 Set Up
 ------------
 ### Package dependency
-I use [poetry](https://python-poetry.org/docs/) to manage all package versions and dependencies to ensure reproducibility. For others, you can use the [requirements.txt](/requirements.txt) to recreate the same Python environment. In you terminal:
+I use [poetry](https://python-poetry.org/docs/) to manage all package versions and dependencies to ensure reproducibility. Then I create [requirements.txt](/requirements.txt) by exporting the poetry:
+```bash
+poetry export --without-hashes --with dev -f requirements.txt -o requirements.txt
+``` 
+
+For others, you can just use the requirements.txt to recreate the same Python environment. In you terminal:
 ```bash
 # clone the repo
 git clone https://github.com/mirandawsy/sy-data-science-exploration.git
