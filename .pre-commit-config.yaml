@@ -4,19 +4,19 @@ exclude: "^.ipynb"
 repos:
   # Black: format Python code
   - repo: https://github.com/psf/black
-    rev: 22.12.0
+    rev: 23.3.0
     hooks:
       - id: black
-        type: [file, python]
+        types: [file, python]
         files: ^src/
         language_version: python3.9
 
   # Black: format Python code for tests
   - repo: https://github.com/psf/black
-    rev: 22.12.0
+    rev: 23.3.0
     hooks:
       - id: black
-        type: [file, python]
+        types: [file, python]
         files: ^tests/
         language_version: python3.9
 
