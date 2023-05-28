@@ -1,0 +1,52 @@
+# Update your hooks with ``pre-commit autoupdate`` on the command line
+exclude: "^.ipynb"
+
+repos:
+  # Black: format Python code
+  - repo: https://github.com/psf/black
+    rev: 22.12.0
+    hooks:
+      - id: black
+        type: [file, python]
+        files: ^src/
+        language_version: python3.9
+
+  # Black: format Python code for tests
+  - repo: https://github.com/psf/black
+    rev: 22.12.0
+    hooks:
+      - id: black
+        type: [file, python]
+        files: ^tests/
+        language_version: python3.9
+
+  # Isort: sort import statements
+  - repo: https://github.com/timothycrosley/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        language_version: python3.9
+
+  # Flake8: complexity and style check
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+        exclude: (^rd/|^reports|^docs|^references)
+        language_version: python3.9
+
+  # Pydocstyle: make sure docstrings are consistent for max readability 
+  - repo: https://github.com/pycqa/pydocstyle
+    rev: 6.3.0
+    hooks:
+      - id: pydocstyle
+        types: [file, python]
+        files: ^src/
+
+  # Format files for white spaces and trailing new lines, warn no debug statement
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+        id: debug-statement
+        id: end-of-file-fixer
