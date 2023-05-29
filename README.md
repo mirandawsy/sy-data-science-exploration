@@ -37,9 +37,10 @@ If you don't have poetry installed, you can check it's [website](https://python-
 curl -sSL https://install.python-poetry.org | python3.9 -
 ```
 
-After installing the poetry, f you cannot run ```poetry --version```, you can stry adding the Poetry's bin directory in your `PATH` like this 
+After installing the poetry, f you cannot run ```poetry --version```, you can try adding the Poetry's bin directory in your `PATH` like this, 
+replace the ```{YourUserFolder}``` with your MAC user folder name with the ```{}```, e.g.```xyz```:
 ```bash
-export PATH="/Users/YourUserFolder/.local/bin:$PATH"
+export PATH="/Users/{YourUserFolder}/.local/bin:$PATH"
 ```
 
 
