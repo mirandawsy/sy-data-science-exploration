@@ -5,7 +5,12 @@ description = "Repo for exploring and learning ML methodologies and algorithms"
 authors = ["Echo_www <wuxx1308@umn.edu>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "sy_data_science_exploration", from = "src"}]
+packages = [
+    {include = "data", from = "src"},
+    {include = "features", from = "src"},
+    {include = "models", from = "src"},
+    {include = "visualization", from = "src"},
+    ]
 
 [tool.poetry.dependencies]
 python = "^3.9"

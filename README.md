@@ -32,6 +32,17 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
+If you don't have poetry installed, you can check it's [website](https://python-poetry.org/docs/) for the recommended way to install. I used:
+```bash
+curl -sSL https://install.python-poetry.org | python3.9 -
+```
+
+After installing the poetry, f you cannot run ```poetry --version```, you can stry adding the Poetry's bin directory in your `PATH` like this 
+```bash
+export PATH="/Users/YourUserFolder/.local/bin:$PATH"
+```
+
+
 Project Organization
 ------------
 
